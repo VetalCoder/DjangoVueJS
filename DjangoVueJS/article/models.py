@@ -7,4 +7,4 @@ class Article(models.Model):
     article_body = models.TextField()
 
     def __str__(self):
-        return f"Article {article_heading}"
+        return f"Article '{self.article_heading}'"

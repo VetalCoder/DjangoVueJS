@@ -20,9 +20,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .routers import router
+from django.views.generic import TemplateView
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('', TemplateView.as_view(template_name='article\main.html')),
 ]
