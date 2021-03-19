@@ -1,5 +1,5 @@
 Django==2.2.1
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 pip==18.1
 pytz==2019.1
 setuptools==40.6.2
